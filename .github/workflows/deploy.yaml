@@ -8,7 +8,7 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    environment: Development
+    environment: Homologation
     steps:
     - name: Log CLIENT_ID
       run: echo "Value of CLIENT_ID is ${{ env.CLIENT_ID }}"
