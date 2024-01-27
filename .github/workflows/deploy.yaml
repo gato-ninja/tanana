@@ -1,0 +1,16 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: Deployment
+    steps:
+    - name: Log CLIENT_ID
+      run: echo "Value of CLIENT_ID is ${{ env.CLIENT_ID }}"
+    - name: Log CLIENT_SECRET
+      run: echo "Value of CLIENT_SECRET is ${{ env.CLIENT_SECRET }}"
