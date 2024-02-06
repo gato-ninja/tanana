@@ -15,4 +15,4 @@ jobs:
     - name: Log CLIENT_SECRET
       run: echo "Value of CLIENT_SECRET is ${{ vars.CLIENT_SECRET }}"
     - name: Log ENVIRONMENT
-      run: echo "Value of ENVIRONMENT is ${{ vars.ENVIRONMENT }}"
+      run: echo "Value of ENVIRONMENT is x ${{ vars.ENVIRONMENT }}"
